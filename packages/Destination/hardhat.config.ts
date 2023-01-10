@@ -16,13 +16,17 @@ export default {
     ],
     overrides: {},
   },
+  etherscan: {
+    apiKey: {
+      optimisticGoerli: process.env.ETHERSCAN_API_KEY,
+    },
+  },
   networks: {
     hardhat: {} as HardhatNetworkConfig,
-    goerli: {
-      chainId: 5,
-      url: 'https://rpc.ankr.com/eth_goerli',
-      // PRIVATE_KEY loaded from .env file
+    // for testnet
+    'optimism-goerli': {
+      url: 'https://goerli.optimism.io',
       accounts: [`0x${process.env.PRIVATE_KEY}`],
-    } as unknown as HardhatNetworkConfig,
+    },
   } as unknown as NetworksConfig,
 };

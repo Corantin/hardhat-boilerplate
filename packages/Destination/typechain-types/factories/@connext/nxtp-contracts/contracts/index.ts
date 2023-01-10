@@ -2,5 +2,3 @@
 /* tslint:disable */
 /* eslint-disable */
 export * as core from "./core";
-export * as messaging from "./messaging";
-export * as shared from "./shared";

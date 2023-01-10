@@ -16,6 +16,11 @@ export default {
     ],
     overrides: {},
   },
+  etherscan: {
+    apiKey: {
+      goerli: process.env.ETHERSCAN_API_KEY,
+    },
+  },
   networks: {
     hardhat: {} as HardhatNetworkConfig,
     goerli: {

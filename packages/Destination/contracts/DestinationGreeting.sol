@@ -11,7 +11,7 @@ contract DestinationGreeting is IXReceiver {
     uint256 public cost = 1e18;
 
     // The TEST Token on Mumbai
-    IERC20 public token = IERC20(0xeDb95D8037f769B72AAab41deeC92903A98C9E16);
+    IERC20 public token = IERC20(0x68Db1c8d85C09d546097C65ec7DCBFF4D6497CbF); // Test Token address on optimism-goerli
 
     /** @notice The receiver function as required by the IXReceiver interface.
      * @dev The Connext bridge contract will call this function.
