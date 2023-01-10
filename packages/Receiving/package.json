@@ -1,5 +1,5 @@
 {
-  "name": "hardhat-boilerplate",
+  "name": "connext-sample-emitter",
   "version": "1.0.0",
   "scripts": {
     "test": "hardhat test"
